@@ -1,0 +1,59 @@
+FLUTTER SDK
+2.12.3
+flutter_macos_2.2.3-stable.zip
+
+
+ANDROID
+====> video_trimmer <===
+app/build.gradle
+set minSdkVersion 24
+
+====> topioca <===
+android/build.gradle
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' } // ADD THIS
+
+    }
+}
+
+change kotlin version :  ext.kotlin_version = '1.5.21'
+
+manifest :
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+
+IOS
+
+
+====> video_trimmer <===
+info.plist
+	<key>NSCameraUsageDescription</key>
+    <string>Used to demonstrate image picker plugin</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Used to capture audio for image picker plugin</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Used to demonstrate image picker plugin</string>
+
+
+====> topioca <===
+<key>NSPhotoLibraryAddUsageDescription</key>
+<string>this app needs permission to access photos on your device</string>
+
+
+photo_view: ^0.12.0
+flutter_simple_sticker_view: ^1.0.0
+matrix_gesture_detector: ^0.1.0
+
+
+
+emoji list with UNICODE
+https://unicode.org/emoji/charts-5.0/full-emoji-list.html
+
+
+
+NOTE: PROJECT NAME WILL BE CHANGEBLE SO MAY BE NOT WORKING IN IOS PLATFORM BECAUSE IT'S NOT WORKING.
